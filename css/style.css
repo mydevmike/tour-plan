@@ -360,6 +360,14 @@ img {
   max-width: 100%;
 }
 
+button:focus {
+  outline: none !important;
+}
+
+input:focus {
+  outline: none !important;
+}
+
 .navbar {
   background-color: #ffffff;
 }
