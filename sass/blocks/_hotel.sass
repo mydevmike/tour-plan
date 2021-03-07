@@ -12,7 +12,7 @@
       margin-top: 4px
       margin-bottom: 0
     &__description
-      margin: 5px 0
+      margin: 0 0
   &-name
     font-size: 24px
     line-height: 30px
@@ -25,6 +25,14 @@
     line-height: 15px
 .stars
   flex-basis: 100%
+  display: flex
+  &__wrapper
+    display: flex
+    max-height: 8px
+    &:not(:first-child)
+      margin-left: 2px
+  &__image
+    min-height: 100%
 .offer
   padding: 4px 9px
   background-color: $primary
@@ -48,3 +56,6 @@
     font-weight: bold
     font-size: 14px
     line-height: 18px
+    &_sm
+      font-size: 10px
+      line-height: 12px

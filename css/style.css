@@ -541,7 +541,7 @@ input:focus {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0 0;
 }
 
 .hotel-name {
@@ -568,6 +568,24 @@ input:focus {
 .stars {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.stars__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-height: 8px;
+}
+
+.stars__wrapper:not(:first-child) {
+  margin-left: 2px;
+}
+
+.stars__image {
+  min-height: 100%;
 }
 
 .offer {
@@ -601,6 +619,11 @@ input:focus {
   line-height: 18px;
 }
 
+.rating__counter_sm {
+  font-size: 10px;
+  line-height: 12px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -610,6 +633,10 @@ input:focus {
 @media (max-width: 992px) {
   .container {
     max-width: 700px;
+  }
+  .hotel {
+    padding-top: 23px;
+    padding-bottom: 60px;
   }
   .logo {
     width: 132px;
@@ -678,6 +705,10 @@ input:focus {
   .stars {
     -ms-flex-preferred-size: auto;
         flex-basis: auto;
+  }
+  .hotel {
+    padding-top: 5px;
+    padding-bottom: 40px;
   }
   .hotel-name {
     -ms-flex-preferred-size: 100%;
