@@ -651,7 +651,7 @@ input:focus {
 .swiper-container {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -671,6 +671,7 @@ input:focus {
 
 .slider {
   width: 728px;
+  height: 450px;
 }
 
 .slider-button {
@@ -707,6 +708,7 @@ input:focus {
 }
 
 .booking {
+  font-family: "Nunito", sans-serif;
   border-radius: 8px;
   background-color: #0A223D;
   width: 350px;
@@ -838,9 +840,16 @@ input:focus {
   border-radius: 10px;
 }
 
+.map__iframe {
+  border-radius: 10px;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
+  }
+  .slider {
+    width: 590px;
   }
 }
 
@@ -872,6 +881,30 @@ input:focus {
   }
   .search__input {
     max-width: 340px;
+  }
+  .hotel-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .hotel__slider {
+    margin-bottom: 30px;
+  }
+  .hotel-right {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .booking {
+    width: 340px;
+  }
+  .map {
+    width: 340px;
+  }
+  .slider {
+    width: 100%;
   }
 }
 
@@ -948,17 +981,51 @@ input:focus {
             order: -1;
     margin-left: 0;
   }
+  .hotel-right {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+  .slider {
+    height: 350px;
+  }
+  .booking {
+    width: 100%;
+  }
+  .map {
+    width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
+  .hotel-info {
+    padding-bottom: 18px;
+  }
+  .hotel-info__offer {
+    margin-top: 0;
+  }
   .logo {
     width: 99px;
+  }
+  .slider {
+    height: 250px;
   }
 }
 
 @media (max-width: 480px) {
   .container {
     width: 88%;
+  }
+  .slider {
+    height: 179px;
+  }
+  .hotel__slider {
+    margin-bottom: 20px;
+  }
+  .booking {
+    margin-bottom: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
