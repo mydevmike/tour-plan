@@ -842,6 +842,10 @@ input:focus {
 
 .map__iframe {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media (max-width: 1200px) {
@@ -1026,6 +1030,13 @@ input:focus {
   }
   .booking {
     margin-bottom: 20px;
+    min-height: 215px;
+  }
+  .map {
+    max-height: 179px;
+  }
+  .hotel-right {
+    min-height: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
