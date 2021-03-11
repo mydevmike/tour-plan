@@ -835,7 +835,7 @@ input:focus {
   width: 347px;
   height: 213px;
   background-color: #000000;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 @media (max-width: 1200px) {
