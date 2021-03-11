@@ -834,6 +834,7 @@ input:focus {
 }
 
 .map {
+  position: relative;
   width: 347px;
   height: 213px;
   background-color: #000000;
@@ -841,6 +842,9 @@ input:focus {
 }
 
 .map__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
   border-radius: 10px;
   width: 100%;
   height: 100%;
@@ -1033,6 +1037,9 @@ input:focus {
     min-height: 215px;
   }
   .map {
+    max-height: 179px;
+  }
+  .map__iframe {
     max-height: 179px;
   }
   .hotel-right {
