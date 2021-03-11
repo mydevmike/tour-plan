@@ -1009,7 +1009,7 @@ input:focus {
 
 @media (max-width: 576px) {
   .hotel-info {
-    padding-bottom: 18px;
+    padding-bottom: 38px;
   }
   .hotel-info__offer {
     margin-top: 0;
